@@ -15,4 +15,6 @@
     <string name="txt_marca">Brand</string>
     <string name="txt_sexo">Genere</string>
     <string name="txt_tipo">Shoe\'s style</string>
+    <string name="zapatilla">Tennis</string>
+    <string name="error_cantidadcero">Quantity shouln\'t be zero</string>
 </resources>

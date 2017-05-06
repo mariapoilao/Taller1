@@ -48,9 +48,10 @@ public void calcular (View v){
 
 
 
-        int op1, op2, op3, cant, res=0;
-        int nikeZ1=120000, adidasZ1=140000, pumaZ1=130000, nikeZ2=100000, adidasZ2=130000, pumaZ2=110000;
-        int nikeC1=50000, adidasC1=80000, pumaC1=100000, nikeC2=60000, adidasC2=70000, pumaC2=120000;
+        int op1, op2, op3, cant;
+                double res=0;
+        double nikeZ1=120000, adidasZ1=140000, pumaZ1=130000, nikeZ2=100000, adidasZ2=130000, pumaZ2=110000;
+        double nikeC1=50000, adidasC1=80000, pumaC1=100000, nikeC2=60000, adidasC2=70000, pumaC2=120000;
 
         if (validar()) {
 
@@ -144,7 +145,7 @@ public void calcular (View v){
 
                     break;
             }
-            cajaResultado.setText("Su cantidad a pagar es: " + res);
+            cajaResultado.setText("Su cantidad a pagar es: \n"+ "$" + res);
         }
     }
 
@@ -156,12 +157,20 @@ public void calcular (View v){
             cantidad.requestFocus();
             return false;
         }
+
+        if (Integer.parseInt(cantidad.getText().toString())==0){
+            cantidad.setError(this.getResources().getString(R.string.error_cantidadcero));
+            cantidad.requestFocus();
+            return false;
+        }
+
         return true;
     }
 
     public void borrar(View v){
 
         cajaResultado.setText("");
+        cantidad.setText("");
 
     }
 
