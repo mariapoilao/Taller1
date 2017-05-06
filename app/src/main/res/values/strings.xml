@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">TallerEmpresaXYZ</string>
+    <string name="titulo">CALCULAR VALOR</string>
+    <string name="txt_cantidad">Cantidad</string>
+    <string name="btnCalcular">CALCULAR</string>
+    <string name="btnBorrar">BORRAR</string>
+    <string name="txtResultado" />
+    <string name="txt_sexo">Genero</string>
+    <string name="txt_tipo">Tipo de Zapato</string>
+    <string name="txt_marca">Marca</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="clasico">Clásico</string>
+    <string name="nike">Nike</string>
+    <string name="adidas">Adidas</string>
+    <string name="puma">Puma</string>
+    <string name="zapatilla">Zapatilla</string>
+    <string-array name="opciones_genero">
+        <item>@string/masculino</item>
+        <item>@string/femenino</item>
+    </string-array>
+    <string-array name="opciones_tipo">
+        <item>@string/zapatilla</item>
+        <item>@string/clasico</item>
+    </string-array>
+    <string-array name="opciones_marca">
+        <item>@string/nike</item>
+        <item>@string/adidas</item>
+        <item>@string/puma</item>
+    </string-array>
 </resources>
