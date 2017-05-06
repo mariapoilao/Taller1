@@ -15,6 +15,7 @@
     <string name="adidas">Adidas</string>
     <string name="puma">Puma</string>
     <string name="zapatilla">Zapatilla</string>
+    <string name="error_cantidad">Debe ingresar la cantidad</string>
     <string-array name="opciones_genero">
         <item>@string/masculino</item>
         <item>@string/femenino</item>
