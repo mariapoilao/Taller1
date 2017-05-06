@@ -17,6 +17,7 @@
     <string name="zapatilla">Zapatilla</string>
     <string name="error_cantidad">Debe ingresar la cantidad</string>
     <string name="error_cantidadcero">Debe ingresar un numero distinto de cero</string>
+    <string name="error_negativo">Debe ser positiva la cantidad</string>
     <string-array name="opciones_genero">
         <item>@string/masculino</item>
         <item>@string/femenino</item>

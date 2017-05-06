@@ -17,4 +17,5 @@
     <string name="txt_tipo">Shoe\'s style</string>
     <string name="zapatilla">Tennis</string>
     <string name="error_cantidadcero">Quantity shouln\'t be zero</string>
+    <string name="error_negativo">Quantity shouldn\'t be negative</string>
 </resources>

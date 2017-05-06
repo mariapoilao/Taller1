@@ -145,7 +145,7 @@ public void calcular (View v){
 
                     break;
             }
-            cajaResultado.setText("Su cantidad a pagar es: \n"+ "$" + res);
+            cajaResultado.setText("Su cantidad a pagar es: $" + res);
         }
     }
 
@@ -164,6 +164,12 @@ public void calcular (View v){
             return false;
         }
 
+        if (Integer.parseInt(cantidad.getText().toString())<=0){
+            cantidad.setError(this.getResources().getString(R.string.error_negativo));
+            cantidad.requestFocus();
+            return false;
+        }
+
         return true;
     }
 
@@ -171,6 +177,7 @@ public void calcular (View v){
 
         cajaResultado.setText("");
         cantidad.setText("");
+        cantidad.requestFocus();
 
     }
 
